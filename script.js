@@ -185,31 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Add click to call functionality for phone numbers
-document.addEventListener('DOMContentLoaded', () => {
-    const phoneNumbers = document.querySelectorAll('.contact-details p');
-    phoneNumbers.forEach(phone => {
-        if (phone.textContent.match(/\d{10}/)) {
-            phone.style.cursor = 'pointer';
-            phone.addEventListener('click', () => {
-                window.location.href = `tel:${phone.textContent.replace(/\D/g, '')}`;
-            });
-        }
-    });
-});
-
-// Add email click functionality
-document.addEventListener('DOMContentLoaded', () => {
-    const emailElements = document.querySelectorAll('.contact-details p');
-    emailElements.forEach(email => {
-        if (email.textContent.includes('@')) {
-            email.style.cursor = 'pointer';
-            email.addEventListener('click', () => {
-                window.location.href = `mailto:${email.textContent}`;
-            });
-        }
-    });
-});
+// Contact links are now handled by HTML tel: and mailto: links
+// Removed JavaScript click handlers that were interfering with native link behavior
 
 // Download tracking and user feedback
 document.addEventListener('DOMContentLoaded', () => {
