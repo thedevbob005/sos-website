@@ -943,6 +943,51 @@ section {
     }
 }
 
+/* SVG Icon Styles */
+.icon-check {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.icon-user {
+    color: #94a3b8;
+}
+
+.icon-large {
+    transition: all 0.3s ease;
+}
+
+.service-icon .icon-large,
+.portfolio-icon .icon-large {
+    filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.icon-download {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.icon-external {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.icon-location,
+.icon-phone,
+.icon-mail,
+.icon-clock {
+    color: var(--primary-color);
+}
+
+.icon-social {
+    transition: all 0.3s ease;
+}
+
+.icon-social:hover {
+    transform: scale(1.1);
+}
+
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
