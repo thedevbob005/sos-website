@@ -1,0 +1,23 @@
+This is a one page website.
+
+Sections
+-----
+1. Header
+2. Hero
+3. About SOS
+4. SOS Team
+5. SOS Business Vertical
+6. Portfolio / Sample Work
+7. Stat Counter
+8. Actual Feedback from Clients
+9. Contact Us
+10. Footer
+
+
+In Menu
+-----
+Home (top / hero)
+About (About SOS)
+Portfolio (Portfolio / Sample Work)
+Testimonial (Actual Feedback from Clients)
+Contact (Contact Us)
