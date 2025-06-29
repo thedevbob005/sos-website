@@ -1,9 +1,9 @@
 /* CSS Variables */
 :root {
-    --primary-color: #a89888;
-    --primary-light: #c4aa9a;
-    --primary-dark: #8c7f70;
-    --primary-darker: #7a6f62;
+    --primary-color: hsl(234, 20%, 46%);
+    --primary-light: hsl(234, 20%, 56%);
+    --primary-dark: hsl(234, 20%, 36%);
+    --primary-darker: hsl(234, 20%, 26%);
 }
 
 /* Reset and Base Styles */
@@ -48,17 +48,36 @@ body {
     margin: 0 auto;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
 .nav-logo h2 {
     color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 700;
 }
 
+.nav-logo-img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 64px;
+    height: 64px;
+}
+
 .nav-logo span {
-    color: #666;
-    font-size: 0.9rem;
-    display: block;
-    margin-top: -5px;
+    color: var(--primary-color);
+    font-size: 20px;
+    display: inline-block;
+    line-height: 64px;
+    margin-bottom: -5px;
+}
+
+@media (max-width: 768px) {
+    .nav-logo span {
+        display: none;
+    }
 }
 
 .nav-menu {
@@ -240,6 +259,13 @@ section {
     background: #f8f9fa;
 }
 
+.about-video video {
+    display: block;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -251,7 +277,6 @@ section {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #475569;
-    margin-bottom: 1.5rem;
 }
 
 .about-text p:last-child {
@@ -263,6 +288,7 @@ section {
     padding: 2rem;
     border-radius: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    aspect-ratio: 16/9;
 }
 
 .certifications h3 {
@@ -900,6 +926,10 @@ section {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .certifications {
+        aspect-ratio: unset;
     }
     
     .about-text p {
